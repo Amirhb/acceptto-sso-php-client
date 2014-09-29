@@ -1365,6 +1365,7 @@ class phpCAS
                 $parsedParams[$key] = $value;
             }
         }
+		self::freeCookies();
         self::$_PHPCAS_CLIENT->logout($parsedParams);
         // never reached
         phpCAS :: traceEnd();
@@ -1386,6 +1387,7 @@ class phpCAS
         if (!is_string($service)) {
             phpCAS :: error('type mismatched for parameter $service (should be `string\')');
         }
+		self::freeCookies();
         self::$_PHPCAS_CLIENT->logout(array ( "service" => $service ));
         // never reached
         phpCAS :: traceEnd();
@@ -1455,6 +1457,7 @@ class phpCAS
         if (!is_string($url)) {
             phpCAS :: error('type mismatched for parameter $url (should be `string\')');
         }
+		self::freeCookies();
         self::$_PHPCAS_CLIENT->logout(
             array (
                 "service" => $service,
