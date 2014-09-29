@@ -41,7 +41,7 @@ $cas_server_ca_cert_path = 'mfa.acceptto.com/cachain.pem';
 
 // The "real" hosts of clustered cas server that send SAML logout messages
 // Assumes the cas server is load balanced across multiple hosts
-$cas_real_hosts = array('mfa.acceptto.com');
+$cas_real_hosts = array('cas-real-1.example.com', 'cas-real-2.example.com');
 
 // Client config for cookie hardening
 $client_domain = '127.0.0.1';
@@ -53,8 +53,8 @@ $client_lifetime = 0;
 // Database config for PGT Storage
 $db = 'pgsql:host=localhost;dbname=phpcas';
 //$db = 'mysql:host=localhost;dbname=phpcas';
-$db_user = 'postgres';
-$db_password = '123456';
+$db_user = '';
+$db_password = '';
 $db_table = 'phpcastabel';
 $driver_options = '';
 
