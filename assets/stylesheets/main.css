@@ -1,0 +1,53 @@
+.nav { padding-top: 0px !important; padding-bottom: 0px !important; }
+.navbar { padding-top: 15px; padding-bottom: 0px !important;margin-bottom: 0px !important; background: #eee !important; }
+.navbar-static-top { background: #333 !important; }
+.navbar-brand { padding-top: 0px; margin-right: 50px;color:#eee !important; }
+.navbar-toggle{}
+.heading-desc{
+    font-size:20px;
+    font-weight:bold;
+    padding:38px 38px 0px 38px;
+    text-align:center;
+}
+body{background:#eee;}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+.form-signin .checkbox {
+    font-weight: normal;
+}
+.form-signin .form-control {
+    position: relative;
+    font-size: 16px;
+    height: 20px;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+.form-signin input[type="text"] {
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+}
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.acceptto{margin-top:10px;}
+.acceptto-icon{
+    width:25px;
+    height:25px;
+}
+.acceptto-panel,.google-panel,.facebook-panel{
+    margin-top:5px;
+    padding:20px;
+    }
+
+.table-parent{width:100%;}
+.table-parent td{width:50%;}
