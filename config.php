@@ -19,6 +19,7 @@
 
 $phpcas_path = '';
 $logout_path = 'http://acceptto-sso-php-client.herokuapp.com/';
+// $logout_path = 'http://localhost/CASclient/';
 ///////////////////////////////////////
 // Basic Config of the phpCAS client //
 ///////////////////////////////////////

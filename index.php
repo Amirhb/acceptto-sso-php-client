@@ -23,6 +23,14 @@ phpCAS::setNoCasServerValidation();
 		<link href="assets/stylesheets/font-awesome.css" media="all" rel="stylesheet" type="text/css" />
 
 		<script src="assets/javascript/jquery.min.js"></script>
+		<script type="text/javascript">
+			function login( args) {
+				var x = screen.width/2 - 300/2;
+   				var y = screen.height/2 - 480/2;
+   				
+   				window.open('cass_processor.php', 'Acceptto Login','width=300,height=480,left='+x+',top='+y);
+			}
+		</script>
 	</head>
 	<body>
 
@@ -38,7 +46,7 @@ phpCAS::setNoCasServerValidation();
 
 					<div class="panel panel-success acceptto-panel">
 					<?php if(!phpCAS::checkAuthentication()): ?>
-						<a href="cass_processor.php" class="btn btn-default">Authenticate with Acceptto CAS</a>
+						<a href="javascript:void(0)" onclick="login(this); return false;" class="btn btn-default">Authenticate with Acceptto CAS</a>
 					<?php else: ?>
 						<?php require 'script_info.php' ?>
     					<p>the user's login is <b><?php echo phpCAS::getUser(); ?></b>.</p>

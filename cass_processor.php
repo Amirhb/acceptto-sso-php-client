@@ -38,7 +38,7 @@ phpCAS::setNoCasServerValidation();
 
 // logout if desired
 if (isset($_REQUEST['logout'])) {
-	phpCAS::logoutWithUrl($logout_path);
+	phpCAS::logoutWithRedirectService($logout_path);
 }
 
 // force CAS authentication
@@ -48,6 +48,7 @@ phpCAS::forceAuthentication();
 // and the user's login name can be read with phpCAS::getUser().
 
 // Redirect to index.php after authentication.
-echo "<script>window.location = 'index.php'; </script>";
+// echo "<script>window.location = 'index.php'; </script>";
+echo "<script>window.opener.location.reload(); window.close();</script>";
 
 ?>
